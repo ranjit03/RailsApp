@@ -12,8 +12,6 @@ default: &default
 development:
   <<: *default
   database: myrubyblog
-  username:postgres
-  password:software
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -21,11 +19,7 @@ development:
 test:
   <<: *default
   database: myrubyblog
-  username:postgres
-  password:software
 
 production:
   <<: *default
- database: myrubyblog
-  username:postgres
-  password:software
+  database: myrubyblog
