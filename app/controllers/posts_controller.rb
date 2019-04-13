@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
     def index
-        @posts = Category.all
-        
+        @posts = Post.all
+    end
+    def show
     end
 end
