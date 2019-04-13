@@ -3,8 +3,8 @@ class CreatePosts < ActiveRecord::Migration[5.2]
     create_table :posts do |t|
       t.string :title
       t.text :body
-      t.string :category_id
-      t.string :author_id
+      t.integer :author_id
+      t.integer :category_id
 
       t.timestamps
     end
