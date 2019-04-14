@@ -11,5 +11,6 @@ ActiveAdmin.register Post do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
+permit_params :title, :body
 
 end
