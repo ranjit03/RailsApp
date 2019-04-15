@@ -68,9 +68,10 @@
 							<h3 class="widget-title">Category</h3>		
 							<ul>
 							<% @categories.each do |category| %>
-								<li>
-									<a href="#"><%= category.name %></a>
-								</li>
+								
+									<li><%= link_to category.name,category %></li>
+
+							
 								<% end %>	
 							</ul>
 						</div>

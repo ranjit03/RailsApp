@@ -1,7 +1,10 @@
-<h2>List of all categories</h2>
+<div class="post">
+<h1>Listing categories</h1>
+<ul>
+<% @categories.each do |category| %>
 
-<% @categories.each do |category|%>
-    <%= category.name %>
-    <% end %>
+<li><%= link_to category.name,category %></li>
 
-
+<% end %>
+</ul>
+</div>
