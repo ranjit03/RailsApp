@@ -27,15 +27,13 @@
             <div class="widget widget-recent-posts">		
                 <h3 class="widget-title">Recent Posts</h3>		
                 <ul>
+                <% @posts.each do |post| %>
+
                     <li>
-                        <a href="#">Adaptive Vs. Responsive Layouts And Optimal Text Readability</a>
+                    <%=link_to post.title, post %> 
                     </li>
-                    <li>
-                        <a href="#">Web Design is 95% Typography</a>
-                    </li>
-                    <li>
-                        <a href="#">Paper by FiftyThree</a>
-                    </li>
+                    <% end %>
+                   
                 </ul>
             </div>
             <div class="widget widget-archives">		
@@ -56,15 +54,12 @@
             <div class="widget widget-category">		
                 <h3 class="widget-title">Category</h3>		
                 <ul>
+                <% @categories.each do |category| %>
                     <li>
-                        <a href="#">Web Design</a>
+                      <%= link_to category.name, category %>
                     </li>
-                    <li>
-                        <a href="#">Web Development</a>
-                    </li>
-                    <li>
-                        <a href="#">SEO</a>
-                    </li>
+                    <% end %>
+                   
                 </ul>
             </div>
         </aside>

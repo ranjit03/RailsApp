@@ -35,20 +35,18 @@
 						
 					</main>
 					<aside class="col-md-4">
-						<div class="widget widget-recent-posts">		
-							<h3 class="widget-title">Recent Posts</h3>		
-							<ul>
-								<li>
-									<a href="#">Adaptive Vs. Responsive Layouts And Optimal Text Readability</a>
-								</li>
-								<li>
-									<a href="#">Web Design is 95% Typography</a>
-								</li>
-								<li>
-									<a href="#">Paper by FiftyThree</a>
-								</li>
-							</ul>
-						</div>
+					<div class="widget widget-recent-posts">		
+					<h3 class="widget-title">Recent Posts</h3>		
+					<ul>
+					<% @posts.each do |post| %>
+	
+						<li>
+						<%=link_to post.title, post %> 
+						</li>
+						<% end %>
+					   
+					</ul>
+				</div>
 						<div class="widget widget-archives">		
 							<h3 class="widget-title">Archives</h3>		
 							<ul>
