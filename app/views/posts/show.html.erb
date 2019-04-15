@@ -1,6 +1,4 @@
 <div class="post"><h1><%= @post.title %></h1>
-<small><%= @post.created_at.strftime("%b %d. %Y") %></small>
-<p><%= @post.body %></p>
 <p><%= link_to "Back",root_path %></p>
 </div>
 
@@ -10,7 +8,7 @@
         <main class="col-md-8">
             <article class="post post-1">
                 <header class="entry-header">
-                    <h1 class="entry-title">Adaptive Vs. Responsive Layouts And Optimal Text Readability</h1>
+                    <h1 class="entry-title"><%= @post.title %></h1>
                     <div class="entry-meta">
                         <span class="post-category"><a href="#">Web Design</a></span>
 
@@ -22,11 +20,11 @@
                     </div>
                 </header>
                 <div class="entry-content clearfix">
-                    <p>Responsive web design offers us a way forward, finally allowing us to design for the ebb and flow of things. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly.</p>
-                    <p>Responsive web design offers us a way forward, finally allowing us to design for the ebb and flow of things. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly.</p>
-                    <p>Responsive web design offers us a way forward, finally allowing us to design for the ebb and flow of things. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly.</p>
-                    <p>Responsive web design offers us a way forward, finally allowing us to design for the ebb and flow of things. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly.</p>
+                <p><%= @post.body %></p>
+
                 </div>
+                <p><%= link_to "Back",root_path %></p>
+
             </article>
         </main>
         <aside class="col-md-4">
@@ -86,16 +84,3 @@
     </div>
 </div>
 </footer>
-
-<!-- Mobile Menu -->
-<div class="overlay overlay-hugeinc">
-<button type="button" class="overlay-close"><span class="ion-ios-close-empty"></span></button>
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="full-width.html">Blog</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
-</div>
