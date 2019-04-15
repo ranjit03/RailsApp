@@ -4,7 +4,6 @@ class PostsController < ApplicationController
     end
     def show
         @post = Post.find(params[:id])
-        @user = AdminUser.all
         @posts =Post.all
         @categories = Category.all
     end
